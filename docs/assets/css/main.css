@@ -1,13 +1,52 @@
-@import 'bourbon';
-@import 'variables';
-@import 'mixins';
+.header {
+  text-align: center;
+  padding: 25px 0;
+}
 
-@import 'header';
+.header img {
+  width: 160px;
+  border-radius: 50%;
+  height: 160px;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 25px;
+}
 
-.slick-slide {
-  &:focus {
-    outline: none;
-  }
+.header h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.header span {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.slider-nav {
+  margin-top: 25px;
+  height: 50px;
+  text-align: center;
+}
+
+.slider-nav span {
+  border-bottom: 3px solid #edf1f3;
+  color: #939393;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  letter-spacing: 1.4px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.slider-nav span.slick-current {
+  color: #D8572A;
+  border-bottom: 3px solid #D8572A;
+}
+
+.slick-slide:focus {
+  outline: none;
 }
 
 .slide-content {
@@ -18,14 +57,14 @@
   position: relative;
   padding-left: 112px;
   padding-bottom: 8px;
+}
 
-  h2 {
-    position: relative;
-    margin-bottom: 2em;
-    font-size: 19px;
-    font-weight: 300;
-    letter-spacing: 1px;
-  }
+.timeline h2 {
+  position: relative;
+  margin-bottom: 2em;
+  font-size: 19px;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
 .event {
@@ -57,7 +96,7 @@
 .event h4 {
   font-size: 16px;
   font-weight: 700;
-  font-family: $lato;
+  font-family: "Lato", sans-serif;
 }
 
 .event h5 {
@@ -80,7 +119,6 @@
   margin: 0px;
 }
 
-
 .event .date {
   position: absolute;
   left: -110px;
@@ -91,7 +129,7 @@
   z-index: 120;
   color: #fff;
   border-radius: 6px;
-  font-family: $lato;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 11px;
   padding: 10px;

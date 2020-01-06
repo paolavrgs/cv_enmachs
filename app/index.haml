@@ -1,5 +1,45 @@
 = Haml::Engine.new(File.read("app/partials/_head.haml")).render()
 %body
-  = Haml::Engine.new(File.read("app/partials/_navbar.haml")).render()
-  = Haml::Engine.new(File.read("app/partials/_footer.haml")).render()
+  %section.header
+    %img{ src: 'https://media.licdn.com/dms/image/C4E03AQHzi5wtKKBQTA/profile-displayphoto-shrink_800_800/0?e=1583971200&v=beta&t=9UzQYpOSaXr0JEB05XCzpqP9Ma_kl0PgRnaZJcdJBKM', alt: 'Profile photo' }
+    %h1 Enmanuel Chirinos
+    %span Software Developer
+  %section.content
+    .container
+      .slider-nav
+        %span resume
+        %span portfolio
+        %span contact
+        %span blog
+      .slider-for
+        .slide-content
+          .timeline
+            %h2 WORK HISTORY
+            .event.current
+              %span.date{"data-placement" => "bottom", "data-toggle" => "tooltip", title: "oct.2018 - current" } current
+              %p
+              %h4 Software Developer
+              %h5 number8
+              %p
+                Working at CareerBuilder client. Big size web app, including mobile. Ruby on Rails with ReactJS as techs. Full stack tasks along the app. Scrum methodology acording to Jira flow. Git flow. Jenkins automatization. AWS services.
+            .event
+              %span.date{"data-placement" => "bottom", "data-toggle" => "tooltip", title: "mar.2018 to oct.2018" } 2018
+              %p
+              %h4 Back-end Developer
+              %h5 Bigwave
+              %p
+                I've worked with amazing developer team as backend developer. Involved in a Rails API REST building an e-commerce. Handling shopping cart, cotizations, chat between companies and users, etc. Implementing STI and delayed_jobs.
+            .event
+              %span.date{"data-placement" => "bottom", "data-toggle" => "tooltip", title: "jan.2017 to oct.2018" } 2017-2018
+              %p
+              %h4 Web Developer
+              %h5 Slice Group
+              %p
+                I worked as web developer in Slice Group. Back-end and Front-end jobs. Experience in HTML (and HAML), CSS (and SASS), JavaScript (jQuery), Ruby, and frameworks as RoR. Basic knowledge of frontend javascript frameworks as EmberJS and ReactJS.
+        .slide-content
+          portfolio
+        .slide-content
+          contact
+        .slide-content
+          blog
   = Haml::Engine.new(File.read("app/partials/_scripts.haml")).render()
