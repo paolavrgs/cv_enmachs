@@ -1,14 +1,23 @@
 .header {
-  text-align: center;
   padding: 25px 0;
+  display: flex;
+}
+
+.header-profile, .header-name, .header-actions {
+  width: 50%;
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
 
   img {
-    width: 160px;
+    width: 100px;
     border-radius: 50%;
-    height: 160px;
+    height: 100px;
     object-fit: cover;
     object-position: top;
-    margin-bottom: 25px;
+    margin-right: 25px;
   }
 
   h1 {
@@ -24,23 +33,9 @@
   }
 }
 
-.slider-nav {
-  margin-top: 25px;
-  height: 50px;
-  text-align: center;
-
-  span {
-    border-bottom: 3px solid #edf1f3;
-    color: #939393;
-    font-family: $lato;
-    font-weight: $bold;
-    letter-spacing: 1.4px;
-    font-size: 18px;
-    text-transform: uppercase;
-
-    &.slick-current {
-      color: #D8572A;
-      border-bottom: 3px solid #D8572A;
-    }
-  }
+.header-actions {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
 }

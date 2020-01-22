@@ -14,13 +14,24 @@
 </head>
 
 <body>
-  <section class="header">
-    <img alt="Profile photo" src="https://media.licdn.com/dms/image/C4E03AQHzi5wtKKBQTA/profile-displayphoto-shrink_800_800/0?e=1583971200&amp;v=beta&amp;t=9UzQYpOSaXr0JEB05XCzpqP9Ma_kl0PgRnaZJcdJBKM">
-    <h1>Enmanuel Chirinos</h1>
-    <span>Software Developer</span>
-  </section>
-  <section class="content">
-    <div class="container">
+  <div class="container">
+    <section class="header">
+      <div class="header-profile">
+        <img alt="Profile photo" src="https://media.licdn.com/dms/image/C4E03AQHzi5wtKKBQTA/profile-displayphoto-shrink_800_800/0?e=1583971200&amp;v=beta&amp;t=9UzQYpOSaXr0JEB05XCzpqP9Ma_kl0PgRnaZJcdJBKM">
+        <div class="header-name">
+          <h1>Enmanuel Chirinos</h1>
+          <span>Software Developer</span>
+          <div class="header-social">
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-github"></i>
+          </div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a class="btn btn-custom" href="#">Download CV</a>
+      </div>
+    </section>
+    <section class="content">
       <div class="slider-nav">
         <span>resume</span>
         <span>portfolio</span>
@@ -28,11 +39,13 @@
         <span>blog</span>
       </div>
       <div class="slider-for">
-        <div class="slide-content">
-          <div class="timeline">
-            <h2>WORK HISTORY</h2>
-            <div class="event current">
-              <span class="date" data-placement="bottom" data-toggle="tooltip" title="oct.2018 - current">current</span>
+        <div class='slide-content'>
+          <div class='timeline'>
+            <h2>
+              <i class='fa fa-laptop'></i> WORK HISTORY
+            </h2>
+            <div class='event current'>
+              <span class='date' data-placement='bottom' data-toggle='tooltip' title='oct.2018 - current'>current</span>
               <p></p>
               <h4>Software Developer</h4>
               <h5>number8</h5>
@@ -40,8 +53,8 @@
                 Working at CareerBuilder client. Big size web app, including mobile. Ruby on Rails with ReactJS as techs. Full stack tasks along the app. Scrum methodology acording to Jira flow. Git flow. Jenkins automatization. AWS services.
               </p>
             </div>
-            <div class="event">
-              <span class="date" data-placement="bottom" data-toggle="tooltip" title="mar.2018 to oct.2018">2018</span>
+            <div class='event'>
+              <span class='date' data-placement='bottom' data-toggle='tooltip' title='mar.2018 to oct.2018'>2018</span>
               <p></p>
               <h4>Back-end Developer</h4>
               <h5>Bigwave</h5>
@@ -49,8 +62,8 @@
                 I've worked with amazing developer team as backend developer. Involved in a Rails API REST building an e-commerce. Handling shopping cart, cotizations, chat between companies and users, etc. Implementing STI and delayed_jobs.
               </p>
             </div>
-            <div class="event">
-              <span class="date" data-placement="bottom" data-toggle="tooltip" title="jan.2017 to oct.2018">2017-2018</span>
+            <div class='event'>
+              <span class='date' data-placement='bottom' data-toggle='tooltip' title='jan.2017 to oct.2018'>2017-2018</span>
               <p></p>
               <h4>Web Developer</h4>
               <h5>Slice Group</h5>
@@ -59,10 +72,90 @@
               </p>
             </div>
           </div>
+          <div class='timeline'>
+            <h2>
+              <i class='fa fa-graduation-cap'></i> EDUCATION
+            </h2>
+            <div class='event'>
+              <span class='date' data-placement='bottom' data-toggle='tooltip' title='2014 - 2019'>2019</span>
+              <p></p>
+              <h4>Systems Engineer</h4>
+              <h5>National Experimental University of the Armed Forces</h5>
+            </div>
+            <div class='event'>
+              <span class='date' data-placement='bottom' data-toggle='tooltip' title='2014 - 2019'>2019</span>
+              <p></p>
+              <h4>English Degree</h4>
+              <h5>Alpha Learning</h5>
+            </div>
+          </div>
         </div>
-        <div class="slide-content">
-          portfolio
+
+        <div class='slide-content'>
+          <div class='portfolio-grid'>
+            <div class='portfolio-item'>
+              <div class='portfolio-media'>
+                <img alt='Talent Network' class='w-100' height='150' src='http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/02.png'>
+                <div class='mask'>
+                  <a href='https://enmachs.github.io/enmachs-cv/' target='blank'></a>
+                </div>
+              </div>
+              <div class='portfolio-desc'>
+                <h3>Talent Network</h3>
+                <p class='category'>App</p>
+              </div>
+            </div>
+            <div class='portfolio-item'>
+              <div class='portfolio-media'>
+                <img alt='SocialReferral' class='w-100' height='150' src='https://enmachs.github.io/enmachs-cv/assets/img/portfolio-8.webp'>
+                <div class='mask'>
+                  <a href='https://enmachs.github.io/enmachs-cv/' target='blank'></a>
+                </div>
+              </div>
+              <div class='portfolio-desc'>
+                <h3>SocialReferral</h3>
+                <p class='category'>App</p>
+              </div>
+            </div>
+            <div class='portfolio-item'>
+              <div class='portfolio-media'>
+                <img alt='Bigwave' class='w-100' height='150' src='http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/02.png'>
+                <div class='mask'>
+                  <a href='https://enmachs.github.io/enmachs-cv/' target='blank'></a>
+                </div>
+              </div>
+              <div class='portfolio-desc'>
+                <h3>Bigwave</h3>
+                <p class='category'>API</p>
+              </div>
+            </div>
+            <div class='portfolio-item'>
+              <div class='portfolio-media'>
+                <img alt='Keppler' class='w-100' height='150' src='https://enmachs.github.io/enmachs-cv/assets/img/portfolio-7.webp'>
+                <div class='mask'>
+                  <a href='https://enmachs.github.io/enmachs-cv/' target='blank'></a>
+                </div>
+              </div>
+              <div class='portfolio-desc'>
+                <h3>Keppler</h3>
+                <p class='category'>Web app</p>
+              </div>
+            </div>
+            <div class='portfolio-item'>
+              <div class='portfolio-media'>
+                <img alt='Extra Mile Tours' class='w-100' height='150' src='http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/02.png'>
+                <div class='mask'>
+                  <a href='https://enmachs.github.io/enmachs-cv/' target='blank'></a>
+                </div>
+              </div>
+              <div class='portfolio-desc'>
+                <h3>Extra Mile Tours</h3>
+                <p class='category'>Web</p>
+              </div>
+            </div>
+          </div>
         </div>
+
         <div class="slide-content">
           contact
         </div>
@@ -70,8 +163,8 @@
           blog
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
   <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
   <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>

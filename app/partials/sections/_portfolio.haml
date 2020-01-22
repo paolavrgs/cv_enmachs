@@ -1,0 +1,12 @@
+- projects = [ { title: 'Talent Network', img: 'http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/02.png', desc: 'App' }, { title: 'SocialReferral', img: 'https://enmachs.github.io/enmachs-cv/assets/img/portfolio-8.webp', desc: 'App' }, { title: 'Bigwave', img: 'http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/02.png', desc: 'API' }, { title: 'Keppler', img: 'https://enmachs.github.io/enmachs-cv/assets/img/portfolio-7.webp', desc: 'Web app' }, { title: 'Extra Mile Tours', img: 'http://themes.pixelwars.org/cvcard-wp/wp-content/uploads/2014/04/02.png', desc: 'Web' }]
+.slide-content
+  .portfolio-grid
+    - projects.each do |project|
+      .portfolio-item
+        .portfolio-media
+          %img.w-100{ height: "150", src: project[:img], alt: project[:title] }
+          .mask
+            %a{href: "https://enmachs.github.io/enmachs-cv/", target: "blank"}
+        .portfolio-desc
+          %h3= project[:title]
+          %p.category= project[:desc]
